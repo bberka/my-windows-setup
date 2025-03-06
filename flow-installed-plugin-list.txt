@@ -1,0 +1,20 @@
+Add2Path-2.0.1
+AnyVideo Downloader-2.1.2
+AppUpgrader-1.1.3
+Bitwarden-2.1.0
+Emoji+-2.0.0
+GamesLauncher-1.9.2
+Github Notifications-4.0.11
+GitHub-1.3.1
+JetBrainsIDEProjects-3.1.3
+Plugin Runner-2.3.1
+Putty-2.2.1
+Quick Uninstaller-2.0.0
+RDP-1.0.15
+Snippets
+Steam Search-9.0.1
+Tailwindcss-1.0.0
+URL Shortener-1.1.0
+Window Services-1.1.5
+Windows Startup-1.0.2
+WinsFlow-1.0.0
