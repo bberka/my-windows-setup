@@ -1,0 +1,79 @@
+.shell powershell
+
+
+# Reload whkd configuration
+# f20 + o                 : taskkill /f /im whkd.exe && start /b whkd # if shell is cmd
+f20 + o                 : taskkill /f /im whkd.exe; Start-Process whkd -WindowStyle hidden # if shell is pwsh / powershell
+f20 + shift + o         : komorebic reload-configuration
+
+# App shortcuts - these require shell to be pwsh / powershell
+# The apps will be focused if open, or launched if not open
+# f20 + f                 : if ($wshell.AppActivate('Firefox') -eq $False) { start firefox }
+# f20 + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
+
+f20 + q                 : komorebic close
+f20 + c                 : komorebic minimize
+
+# Resize
+f20 + f23 + left      : komorebic resize-axis horizontal increase
+f20 + f23 + right           : komorebic resize-axis horizontal decrease
+f20 + f23 + up     : komorebic resize-axis vertical increase
+f20 + f23 + down  : komorebic resize-axis vertical decrease
+
+# Focus windows
+f20 + left                 : komorebic focus left
+f20 + down                 : komorebic focus down
+f20 + up                   : komorebic focus up
+f20 + right                : komorebic focus right
+f20 + shift + oem_4     : komorebic cycle-focus previous # oem_4 is [
+f20 + shift + oem_6     : komorebic cycle-focus next # oem_6 is ]
+
+# Move windows
+f20 + shift + left         : komorebic move left
+f20 + shift + down         : komorebic move down
+f20 + shift + up           : komorebic move up
+f20 + shift + right        : komorebic move right
+f20 + shift + w    : komorebic promote
+
+# Stack windows
+f20 + ctrl + left              : komorebic stack left
+f20 + ctrl + down              : komorebic stack down
+f20 + ctrl + up                : komorebic stack up
+f20 + ctrl + right             : komorebic stack right
+f20 + shift + s             : komorebic unstack # oem_1 is ;
+f20 + shift + a             : komorebic cycle-stack previous # oem_4 is [
+f20 + shift + d             : komorebic cycle-stack next # oem_6 is ]
+
+
+
+# Manipulate windows
+f20 + t                 : komorebic toggle-float
+f20 + shift + f         : komorebic toggle-monocle
+
+# Window manager options
+f20 + shift + r         : komorebic retile
+f20 + p                 : komorebic toggle-pause
+
+# Layouts
+f20 + x                 : komorebic flip-layout horizontal
+f20 + y                 : komorebic flip-layout vertical
+
+# Workspaces
+f20 + 1                 : komorebic focus-workspace 0
+f20 + 2                 : komorebic focus-workspace 1
+f20 + 3                 : komorebic focus-workspace 2
+f20 + 4                 : komorebic focus-workspace 3
+f20 + 5                 : komorebic focus-workspace 4
+f20 + 6                 : komorebic focus-workspace 5
+f20 + 7                 : komorebic focus-workspace 6
+f20 + 8                 : komorebic focus-workspace 7
+
+# Move windows across workspaces
+f20 + shift + 1         : komorebic move-to-workspace 0
+f20 + shift + 2         : komorebic move-to-workspace 1
+f20 + shift + 3         : komorebic move-to-workspace 2
+f20 + shift + 4         : komorebic move-to-workspace 3
+f20 + shift + 5         : komorebic move-to-workspace 4
+f20 + shift + 6         : komorebic move-to-workspace 5
+f20 + shift + 7         : komorebic move-to-workspace 6
+f20 + shift + 8         : komorebic move-to-workspace 7
